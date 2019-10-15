@@ -1,24 +1,27 @@
-# README
+# rails-aviaryapp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aviary App with Posts based on Rails
+------------------------------------
 
-Things you may want to cover:
+This site is using Rails.
 
-* Ruby version
+## Database: Sqlite3
 
-* System dependencies
+## What has been implemented
 
-* Configuration
+* Navigation
+* Nested Resources
+* Use of layouts and include files 
 
-* Database creation
+To test the site locally:
 
-* Database initialization
+From the root of project run the commands:
 
-* How to run the test suite
+1. `bundle install`
+2. `rails serve`
 
-* Services (job queues, cache servers, search engines, etc.)
+<hr>
 
-* Deployment instructions
+## References
 
-* ...
+1. [digitalocean](https://www.digitalocean.com/community/tutorials/how-to-create-nested-resources-for-a-ruby-on-rails-application)
