@@ -1,0 +1,96 @@
+  /*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:hover {
+    background-color: #f3d7d7;
+  }
+  /* 
+a:link,
+a:visited {
+  background-color: #4CAF50;
+  color: white;
+padding: 14px 25px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+*/
+  /* unvisited link */
+  
+  a:link {
+    color: #4CAF50;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:visited {
+    color: red;
+    background-color: rgb(151, 143, 143);
+  }
+  
+  label {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 14px 0px 15px 0px;
+  }
+  
+  input[type=text] {
+    width: 50%;
+    height: 30px;
+  }
+  
+  h1,
+  label {
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    width: 150px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  textarea {
+    width: 50%;
+    height: 10em;
+  }

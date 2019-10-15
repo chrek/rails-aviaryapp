@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Aviary:</strong>
+  <%= @aviary.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @aviary.description %>
+</p>
+
+<h2>Posts</h2>
+<% for post in @aviary.posts %>
+  <ul>
+    <li><%= post.body %></li>
+  </ul>  
+<% end %>
+
+<%= link_to 'Edit', edit_aviary_path(@aviary) %> | 
+<%= link_to 'Add Post', aviary_posts_path(@aviary) %> | 
+<%= link_to 'Back', aviaries_path %>

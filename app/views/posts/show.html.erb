@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @post.body %>
+</p>
+
+<p>
+  <strong>Aviary:</strong>
+  <%= @post.aviary_id %>
+</p>
+
+<%= link_to 'Edit', edit_aviary_post_path(@aviary, @post) %> |
+<%= link_to 'Back', aviary_posts_path(@aviary) %>
