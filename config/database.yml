@@ -24,10 +24,9 @@ default: &default
 development:
   <<: *default
   database: rails_aviaryapp_development
-  username: <%= Rails.application.credentials.developement[:postgres_username] %>
-  password: <%= Rails.application.credentials.developement[:postgres_password] %>
-
-
+  username: <%= Rails.application.credentials.username %>
+  password: <%= Rails.application.credentials.password %>
+  
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -61,9 +60,9 @@ development:
 test:
   <<: *default
   database: rails_aviaryapp_test
-  username: <%= Rails.application.credentials.test[:postgres_username] %>
-  password: <%= Rails.application.credentials.test[:postgres_password] %>
-    
+  username: <%= Rails.application.credentials.username %>
+  password: <%= Rails.application.credentials.password %>
+  
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
