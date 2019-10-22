@@ -26,7 +26,7 @@ development:
   database: rails_aviaryapp_development
   username: <%= Rails.application.credentials.username %>
   password: <%= Rails.application.credentials.password %>
-  
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: rails_aviaryapp_production
-  username: rails_aviaryapp
-  password: <%= ENV['RAILS_AVIARYAPP_DATABASE_PASSWORD'] %>
+  database: rails_aviaryapp_development
+  username: <%= Rails.application.credentials.username %>
+  password: <%= Rails.application.credentials.password %>
