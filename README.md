@@ -26,6 +26,10 @@ From the root of project run the commands:
 1. `bundle install`
 2. `rails serve`
 
+## Deploy to Heroku
+
+[Click to access](https://rails-aviaryapp-postgresql.herokuapp.com)
+
 <hr>
 
 ## References:
