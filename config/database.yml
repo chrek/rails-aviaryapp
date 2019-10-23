@@ -82,8 +82,9 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
   <<: *default
-  database: rails_aviaryapp_development
-  username: <%= Rails.application.credentials.username %>
-  password: <%= Rails.application.credentials.password %>
+  database: rails_aviaryapp_production
+  username: rails_aviaryapp
+  password: <%= ENV['RAILS_AVIARYAPP_DATABASE_PASSWORD'] %>
